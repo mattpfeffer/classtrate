@@ -1,0 +1,47 @@
+{
+    "name": "classtrate",
+    "version": "0.0.0",
+    "type": "module",
+    "description": "A small utility for stripping unwanted classes from html strings.",
+    "author": "Matt Pfeffer (https://github.com/mattpfeffer)",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mattpfeffer/classtrate.git"
+    },
+    "main": "./dist/mjs/classtrate.js",
+    "exports": {
+        ".": {
+            "import": "./dist/mjs/classtrate.js",
+            "require": "./dist/cjs/classtrate.js"
+        }
+    },
+    "scripts": {
+        "build": "rm -fr dist/* && tsc -p tsconfig-mjs.json && tsc -p tsconfig-cjs.json",
+        "types": "tsc -w -p tsconfig-mjs.json",
+        "next": "node ./.scripts/next-version.cjs",
+        "release": "standard-version"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.0.2",
+        "@commitlint/config-conventional": "^17.0.2",
+        "@types/minimatch": "^3.0.5",
+        "@typescript-eslint/eslint-plugin": "^5.27.1",
+        "@typescript-eslint/parser": "^5.27.1",
+        "conventional-recommended-bump": "^6.1.0",
+        "eslint": "^8.17.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.2.2",
+        "eslint-plugin-promise": "^6.0.0",
+        "husky": "^8.0.1",
+        "prettier": "^2.6.2",
+        "semver": "^7.3.7",
+        "standard-version": "^9.5.0"
+    },
+    "dependencies": {
+        "minimatch": "^5.1.0",
+        "typescript": "^4.7.3"
+    }
+}
