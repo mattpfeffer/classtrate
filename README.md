@@ -1,6 +1,6 @@
 # classtrate
 
-A small utility for stripping unwanted classes from html strings ✂️
+A small utility for stripping unwanted classes from HTML strings ✂️
 
 ## When do you need this?
 
