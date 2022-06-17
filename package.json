@@ -1,6 +1,6 @@
 {
     "name": "classtrate",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "type": "module",
     "description": "A small utility for stripping unwanted classes from HTML strings.",
     "author": "Matt Pfeffer (https://github.com/mattpfeffer)",
