@@ -10,6 +10,7 @@
         "url": "git+https://github.com/mattpfeffer/classtrate.git"
     },
     "main": "./dist/mjs/classtrate.js",
+    "types": "./types/classtrate.d.ts",
     "exports": {
         ".": {
             "import": "./dist/mjs/classtrate.js",
@@ -17,7 +18,7 @@
         }
     },
     "scripts": {
-        "build": "rm -fr dist/* && tsc -p tsconfig-mjs.json && tsc -p tsconfig-cjs.json",
+        "build": "rm -fr dist/* && tsc -p tsconfig.m.json && tsc -p tsconfig.c.json && tsc -p tsconfig.d.json",
         "types": "tsc -w -p tsconfig-mjs.json",
         "next": "node ./.scripts/next-version.cjs",
         "release": "standard-version"

@@ -1,5 +1,5 @@
 {
-    "extends": "./tsconfig-shared.json",
+    "extends": "./tsconfig.json",
     "compilerOptions": {
         "outDir": "dist/cjs/",
         "target": "es2021",
